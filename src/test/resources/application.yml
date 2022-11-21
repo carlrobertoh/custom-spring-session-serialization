@@ -1,0 +1,10 @@
+spring:
+  flyway:
+    schemas: public
+    locations: filesystem:doc/flyway/migrations
+  datasource:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:postgresql:11.5://localhost/test
+  session:
+    jdbc:
+      initialize-schema: always

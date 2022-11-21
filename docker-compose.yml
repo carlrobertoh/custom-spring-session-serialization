@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgresdb:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=note
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=YourStrongPassw0rd
+    ports:
+      - "5432:5432"
